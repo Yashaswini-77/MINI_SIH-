@@ -1,0 +1,8 @@
+flowchart LR
+  U[DAO Member] --> F[React Frontend]
+  F --> W[Pera Wallet / AlgoSigner]
+  F --> B[FastAPI Read Layer]
+  B --> I[Algorand Indexer / algod]
+  W --> A[Algorand Smart Contract]
+  A --> X[Application Account Treasury]
+  A --> B
